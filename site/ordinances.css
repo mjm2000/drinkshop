@@ -1,12 +1,18 @@
-/* Ordinance detail pages — extends main VOLT BAR theme */
+/* Ordinance detail pages — extends main Lone Volt theme */
 :root {
-  --bg: #0a0a0c;
-  --bg-card: #16161f;
-  --text: #e8e8ed;
-  --text-muted: #8b8b9a;
-  --accent: #c8ff00;
-  --accent-dim: #9ecc00;
-  --border: #2a2a36;
+  --bg: #0e1218;
+  --bg-elevated: #141b24;
+  --bg-card: #1a222d;
+  --text: #f4efe6;
+  --text-muted: #a39686;
+  --accent: #e8943a;
+  --accent-dim: #c97a28;
+  --accent-glow: rgba(232, 148, 58, 0.16);
+  --accent-border: rgba(232, 148, 58, 0.28);
+  --accent-subtle: rgba(232, 148, 58, 0.1);
+  --accent-blue: #5a8fc4;
+  --accent-blue-dim: #3d6ea8;
+  --border: #2a3542;
   --font-display: "Bebas Neue", sans-serif;
   --font-body: "DM Sans", system-ui, sans-serif;
 }
@@ -19,7 +25,9 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -15%, var(--accent-glow), transparent 55%),
+    var(--bg);
 }
 
 .ord-nav {
@@ -30,7 +38,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1.25rem;
-  background: rgba(10, 10, 12, 0.92);
+  background: rgba(14, 18, 24, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -116,7 +124,8 @@ body {
 }
 
 .card-highlight {
-  border-color: rgba(200, 255, 0, 0.25);
+  border-color: var(--accent-border);
+  box-shadow: 0 0 32px var(--accent-glow);
 }
 
 .data-table {
@@ -139,7 +148,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-muted);
-  background: #12121a;
+  background: var(--bg-elevated, #141b24);
 }
 
 .tag {
@@ -153,7 +162,7 @@ body {
   margin-left: 0.35rem;
 }
 
-.tag-ok { background: rgba(200, 255, 0, 0.12); color: var(--accent-dim); }
+.tag-ok { background: var(--accent-subtle); color: var(--accent-dim); }
 .tag-sup { background: rgba(255, 180, 0, 0.12); color: #ffb84d; }
 .tag-check { background: rgba(139, 139, 154, 0.15); color: var(--text-muted); }
 
@@ -288,7 +297,7 @@ a.cite:hover {
 
 .compare-table th.col-energy,
 .compare-table td:nth-child(2) {
-  border-left: 2px solid rgba(200, 255, 0, 0.2);
+  border-left: 2px solid var(--accent-subtle);
 }
 
 .compare-table th.col-coffee,
@@ -350,8 +359,8 @@ a.cite:hover {
 
 .hub-card-featured {
   grid-column: 1 / -1;
-  border-color: rgba(200, 255, 0, 0.3);
-  background: rgba(200, 255, 0, 0.04);
+  border-color: var(--accent-border);
+  background: var(--accent-subtle);
 }
 
 /* Pros & cons blocks */
@@ -401,7 +410,7 @@ a.cite:hover {
 }
 
 .pro-label {
-  background: rgba(200, 255, 0, 0.12);
+  background: var(--accent-subtle);
   color: var(--accent-dim);
 }
 

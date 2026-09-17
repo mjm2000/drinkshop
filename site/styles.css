@@ -1,14 +1,21 @@
 :root {
-  --bg: #0a0a0c;
-  --bg-elevated: #12121a;
-  --bg-card: #16161f;
-  --text: #e8e8ed;
-  --text-muted: #8b8b9a;
-  --accent: #c8ff00;
-  --accent-dim: #9ecc00;
-  --accent-glow: rgba(200, 255, 0, 0.15);
-  --border: #2a2a36;
-  --danger: #ff4466;
+  /* Lone Star palette — warm desert night, burnt orange, Texas blue */
+  --bg: #0e1218;
+  --bg-elevated: #141b24;
+  --bg-card: #1a222d;
+  --text: #f4efe6;
+  --text-muted: #a39686;
+  --accent: #e8943a;
+  --accent-dim: #c97a28;
+  --accent-glow: rgba(232, 148, 58, 0.16);
+  --accent-border: rgba(232, 148, 58, 0.28);
+  --accent-subtle: rgba(232, 148, 58, 0.1);
+  --accent-blue: #5a8fc4;
+  --accent-blue-dim: #3d6ea8;
+  --accent-blue-glow: rgba(90, 143, 196, 0.14);
+  --border: #2a3542;
+  --danger: #c9344a;
+  --nav-bg: rgba(14, 18, 24, 0.9);
   --font-display: "Bebas Neue", sans-serif;
   --font-body: "DM Sans", system-ui, sans-serif;
   --nav-height: 56px;
@@ -29,7 +36,10 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -15%, var(--accent-glow), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 100% 100%, var(--accent-blue-glow), transparent 50%),
+    var(--bg);
   overflow-x: hidden;
 }
 
@@ -53,7 +63,7 @@ body.present-mode .slide {
   align-items: center;
   gap: 1rem;
   padding: 0 1.25rem;
-  background: rgba(10, 10, 12, 0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -196,7 +206,7 @@ body.present-mode .slide {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent-dim);
+  color: var(--accent-blue);
   margin: 0;
 }
 
@@ -223,7 +233,7 @@ body.present-mode .slide {
   line-height: 0.95;
   margin: 0;
   letter-spacing: 0.06em;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dim) 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #f0c060 42%, var(--accent-blue) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -250,7 +260,7 @@ body.present-mode .slide {
   border-radius: 999px;
   background: var(--accent-glow);
   color: var(--accent);
-  border: 1px solid rgba(200, 255, 0, 0.3);
+  border: 1px solid var(--accent-border);
 }
 
 .badge-outline {
@@ -349,8 +359,8 @@ body.present-mode .slide {
 }
 
 .card-accent {
-  border-color: rgba(200, 255, 0, 0.25);
-  box-shadow: 0 0 40px var(--accent-glow);
+  border-color: var(--accent-border);
+  box-shadow: 0 0 40px var(--accent-glow), inset 0 1px 0 var(--accent-blue-glow);
 }
 
 .card p { margin: 0; }
@@ -557,7 +567,7 @@ body.present-mode .slide {
 .use-compare-table th.use-col-coffee { color: #c4a574; }
 .use-compare-table th.use-col-bar { color: #ff6680; }
 
-.use-compare-table td:nth-child(2) { border-left: 2px solid rgba(200, 255, 0, 0.15); }
+.use-compare-table td:nth-child(2) { border-left: 2px solid var(--accent-subtle); }
 .use-compare-table td:nth-child(3) { border-left: 2px solid rgba(196, 165, 116, 0.2); }
 .use-compare-table td:nth-child(4) { border-left: 2px solid rgba(255, 102, 128, 0.15); }
 
@@ -859,7 +869,7 @@ body.present-mode .slide {
 }
 
 .threat-low {
-  background: rgba(200, 255, 0, 0.1);
+  background: var(--accent-subtle);
   color: var(--accent-dim);
 }
 

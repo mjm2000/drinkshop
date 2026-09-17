@@ -128,7 +128,7 @@
     cb.addEventListener("change", updateCheckProgress);
   });
 
-  const STORAGE_KEY = "voltbar-checklist";
+  const STORAGE_KEY = "lonewolt-checklist";
   function saveState() {
     const state = {
       checks: {},

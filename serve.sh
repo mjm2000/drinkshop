@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Serve the VOLT BAR presentation locally.
+# Serve The Lone Volt presentation locally.
 #
 # Usage:
 #   ./serve.sh [port]
@@ -17,7 +17,7 @@ if [[ ! -d "$SITE_DIR" ]]; then
   exit 1
 fi
 
-echo "Serving VOLT BAR presentation at http://localhost:$PORT"
+echo "Serving The Lone Volt presentation at http://localhost:$PORT"
 echo "Press Ctrl+C to stop."
 echo ""
 
