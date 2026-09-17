@@ -1,0 +1,193 @@
+% Drink Shop Checklist — PDF styling
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+\usepackage{microtype}
+\usepackage{needspace}
+
+% Palette
+\definecolor{CoffeeDark}{HTML}{3D2B1F}
+\definecolor{CoffeeMid}{HTML}{6F4E37}
+\definecolor{Caramel}{HTML}{C17840}
+\definecolor{Cream}{HTML}{FAF6F1}
+\definecolor{CreamDark}{HTML}{EDE4D8}
+\definecolor{Sage}{HTML}{7D8B6F}
+\definecolor{Ink}{HTML}{2A2118}
+\definecolor{Muted}{HTML}{6B5E52}
+
+\setmainfont{TeX Gyre Pagella}[Color=Ink]
+\setsansfont{TeX Gyre Heros}[Color=CoffeeDark]
+\setmonofont{TeX Gyre Cursor}[Scale=0.88, Color=CoffeeMid]
+
+\pagecolor{Cream}
+\color{Ink}
+
+% Title page
+\makeatletter
+\providecommand{\subtitle}[1]{\def\@subtitle{#1}}
+\def\@subtitle{}
+\def\maketitle{%
+  \begin{titlepage}
+    \pagecolor{CoffeeDark}
+    \color{Cream}
+    \null\vfill
+    \noindent
+    {\sffamily\fontsize{11}{13}\selectfont\addfontfeature{LetterSpace=12.0}\MakeUppercase{Planning Workbook}\par}
+    \vspace{1.2cm}
+    {\sffamily\bfseries\fontsize{36}{40}\selectfont\@title\par}
+    \vspace{0.6cm}
+    {\sffamily\fontsize{14}{18}\selectfont\color{Caramel}\@subtitle\par}
+    \vspace{2.4cm}
+    \noindent\rule{0.18\textwidth}{2pt}
+    \vspace{0.5cm}
+    \par
+    {\sffamily\fontsize{10}{14}\selectfont\color{CreamDark}%
+      Evaluate concepts \textbullet{} Compare locations \textbullet{} Plan your launch\par}
+    \vfill
+    {\sffamily\fontsize{9}{12}\selectfont\color{Muted!60!white} DFW Market Edition\par}
+  \end{titlepage}
+  \pagecolor{Cream}
+  \color{Ink}
+}
+\makeatother
+
+% Section headings
+\titleformat{\section}
+  {\sffamily\Large\bfseries\color{CoffeeDark}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.3em}{\color{Caramel}\titlerule[1.2pt]}]
+
+\titleformat{\subsection}
+  {\sffamily\large\bfseries\color{CoffeeMid}}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsubsection}
+  {\sffamily\normalsize\bfseries\color{Caramel}}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\section}{0pt}{1.6em}{0.8em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsubsection}{0pt}{0.9em}{0.35em}
+
+% Header / footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{Muted} Drink Shop Idea Checklist}
+\fancyhead[R]{\sffamily\small\color{Muted} DFW Edition}
+\fancyfoot[C]{\sffamily\small\color{Muted} \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{CreamDark}\leaders\hrule height \headrulewidth\hfill}}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\sffamily\small\color{Muted} \thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Horizontal rules
+\renewcommand{\hrulefill}{%
+  \vspace{0.4em}%
+  \noindent{\color{CreamDark}\rule{\linewidth}{0.6pt}}%
+  \vspace{0.4em}%
+}
+
+% Lists & checkboxes
+\setlist[itemize]{
+  leftmargin=1.4em,
+  itemsep=0.25em,
+  parsep=0pt,
+  topsep=0.35em,
+  label={\color{Caramel}\textbullet}
+}
+\setlist[enumerate]{
+  leftmargin=1.6em,
+  itemsep=0.25em,
+  parsep=0pt,
+  topsep=0.35em
+}
+
+% Tables
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{8pt}
+
+% TOC styling
+\usepackage{tocloft}
+\renewcommand{\cftsecfont}{\sffamily\color{CoffeeDark}}
+\renewcommand{\cftsubsecfont}{\sffamily\color{Muted}}
+\renewcommand{\cftsecpagefont}{\sffamily\color{Caramel}}
+\renewcommand{\cftsubsecpagefont}{\sffamily\color{Muted}}
+\setlength{\cftbeforesecskip}{0.5em}
+
+% Callout boxes (pandoc divs)
+\newtcolorbox{callout}{
+  enhanced,
+  breakable,
+  colback=CreamDark,
+  colframe=Caramel,
+  boxrule=0pt,
+  leftrule=3pt,
+  arc=2pt,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt,
+  before skip=0.8em,
+  after skip=0.8em
+}
+
+\newtcolorbox{ideacard}{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=CoffeeMid,
+  boxrule=0.6pt,
+  arc=4pt,
+  left=12pt,
+  right=12pt,
+  top=10pt,
+  bottom=10pt,
+  before skip=1em,
+  after skip=1.2em,
+  title={\sffamily\bfseries\color{CoffeeDark} Idea Overview},
+  coltitle=CoffeeDark,
+  fonttitle=\sffamily,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={
+    colback=CreamDark,
+    colframe=CoffeeMid,
+    boxrule=0.4pt,
+    arc=2pt
+  }
+}
+
+\newtcolorbox{phasebox}{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=CreamDark,
+  boxrule=0.4pt,
+  arc=3pt,
+  left=10pt,
+  right=10pt,
+  top=6pt,
+  bottom=6pt,
+  before skip=0.6em,
+  after skip=0.6em
+}
+
+% Strong / links
+\renewcommand{\emph}[1]{\textcolor{CoffeeMid}{\textit{#1}}}

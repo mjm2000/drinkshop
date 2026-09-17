@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT BAR — Energy Drink Shop Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Presentation sections">
+    <div class="nav-brand">VOLT BAR</div>
+    <ul class="nav-links" id="navLinks"></ul>
+    <div class="nav-actions">
+      <button type="button" class="btn btn-ghost" id="presentBtn" aria-pressed="false">Present</button>
+      <span class="slide-counter" id="slideCounter">1 / 17</span>
+    </div>
+  </nav>
+
+  <main class="deck" id="deck">
+    <!-- Slide 1: Hero -->
+    <section class="slide slide-hero" data-title="Intro">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">DFW Energy Drink Shop Concept</p>
+      <h1>VOLT BAR</h1>
+      <p class="hero-tagline">Custom energy drinks, a curated wall of bottled and imported cans, and a late-night counter culture — built for gamers, gym rats, and the 2 AM crowd.</p>
+      <div class="hero-meta">
+        <span class="badge">Status: Planning</span>
+        <span class="badge badge-outline">Evaluated Sep 2026</span>
+      </div>
+      <p class="keyboard-hint">Use ← → arrow keys or scroll to navigate</p>
+    </section>
+
+    <!-- Slide 2: Title & Brand -->
+    <section class="slide" data-title="Brand">
+      <h2>Title & Brand</h2>
+      <p class="lead">A name that hits like the product — memorable, ownable, and built for social.</p>
+      <ul class="checklist" data-section="brand">
+        <li><label><input type="checkbox" checked disabled> Name is memorable and easy to say</label></li>
+        <li><label><input type="checkbox" checked disabled> Name reflects the concept (drinks, vibe, locality)</label></li>
+        <li><label><input type="checkbox"> Domain and social handles are available</label></li>
+        <li><label><input type="checkbox"> No trademark conflicts with existing brands</label></li>
+      </ul>
+      <div class="card card-accent">
+        <h3>Working Title</h3>
+        <p class="display-text">VOLT BAR — <em>"Plug in. Power up."</em></p>
+        <p class="muted">Alternates: Amped Alley, Neon Fuel, Overdrive Café</p>
+      </div>
+    </section>
+
+    <!-- Slide 3: Description -->
+    <section class="slide" data-title="Concept">
+      <h2>Description</h2>
+      <ul class="checklist" data-section="description">
+        <li><label><input type="checkbox" checked disabled> One-sentence pitch is clear</label></li>
+        <li><label><input type="checkbox" checked disabled> Concept is differentiated from nearby competitors</label></li>
+        <li><label><input type="checkbox" checked disabled> Core products are defined</label></li>
+        <li><label><input type="checkbox" checked disabled> Pricing tier is identified (mid-premium)</label></li>
+      </ul>
+      <div class="card">
+        <h3>What is it?</h3>
+        <p>VOLT BAR is a walk-up and counter-service energy drink bar where customers build custom blends from sugar-free bases, natural caffeine sources, and functional add-ins — think boba-bar customization meets esports lounge energy.</p>
+        <p>We also stock a <strong>diverse bottled energy program</strong>: mainstream favorites, zero-sugar lines, and <strong>imported cans</strong> you won't find at a typical gas station — Japanese, Korean, European, and Latin American brands alongside domestic craft options. Grab one from the cooler on the way out, or stay and build something custom at the bar.</p>
+        <p>Unlike generic coffee shops or convenience stores, we own the full energy niche — <strong>made-to-order + curated retail</strong> under one roof for gamers, gym-goers, and the late-night crowd.</p>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Custom energy blends</span>
+        <span class="pill">Bottled &amp; canned retail</span>
+        <span class="pill">Imported energy drinks</span>
+        <span class="pill">Zero-sugar bases</span>
+        <span class="pill">Functional add-ins</span>
+        <span class="pill">Late-night hours</span>
+      </div>
+      <div class="card">
+        <h3>Bottled &amp; imported lineup (sample)</h3>
+        <p class="muted" style="margin-bottom:0.5rem">Rotating selection — 40–60 SKUs across chilled wall + ambient display</p>
+        <div class="pill-row">
+          <span class="pill">Domestic craft (Ghost, Alani, Celsius+)</span>
+          <span class="pill">Japan — Boss, Real Gold, Zone</span>
+          <span class="pill">Korea — Bacchus, Hot6, Monster Ultra variants</span>
+          <span class="pill">EU — Lucozade Energy, Effect, Power Horse</span>
+          <span class="pill">Functional / clean — Yerbaé, Runa, Guayaki</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: Competitors -->
+    <section class="slide" data-title="Competitors">
+      <h2>Competitive Landscape</h2>
+      <p class="lead">Who already owns the caffeine in DFW — and what similar concepts prove the model elsewhere.</p>
+      <ul class="checklist compact">
+        <li><label><input type="checkbox"> Mapped direct competitors in target corridors</label></li>
+        <li><label><input type="checkbox"> Mapped indirect competitors (coffee, boba, soda)</label></li>
+        <li><label><input type="checkbox"> Researched similar concepts in other markets</label></li>
+        <li><label><input type="checkbox" checked> Identified gaps VOLT BAR can own</label></li>
+      </ul>
+
+      <h3 class="section-label">DFW — Existing Competitors</h3>
+      <div class="table-scroll">
+        <table class="data-table competitor-table">
+          <thead>
+            <tr><th>Brand</th><th>Type</th><th>Energy / custom offer</th><th>Threat</th><th>Gap for VOLT BAR</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>7 Brew</strong></td>
+              <td>Drive-thru chain</td>
+              <td>7 Energy (original + sugar-free), 20K+ flavor combos; Coit Rd, Frisco, Carrollton, FW</td>
+              <td><span class="threat threat-high">High</span></td>
+              <td>Car-only, no lounge; energy is one line item, not the whole brand</td>
+            </tr>
+            <tr>
+              <td><strong>Swig</strong></td>
+              <td>Dirty-soda chain</td>
+              <td>Reviver energy + dirty sodas; Coppell, Carrollton, McKinney, Hurst, FW, Garland+</td>
+              <td><span class="threat threat-high">High</span></td>
+              <td>Soda-first identity; limited late-night / gaming culture</td>
+            </tr>
+            <tr>
+              <td><strong>Dutch Bros</strong></td>
+              <td>Drive-thru chain</td>
+              <td>Rebel energy drinks (iced/blended); Mockingbird, Frisco, Plano, DeSoto</td>
+              <td><span class="threat threat-high">High</span></td>
+              <td>Drive-thru only; no mg transparency or functional add-ins</td>
+            </tr>
+            <tr>
+              <td><strong>Leaf Café</strong></td>
+              <td>Wellness café</td>
+              <td>Custom energy refreshers, CBD/kava add-ins; Downtown McKinney</td>
+              <td><span class="threat threat-med">Med</span></td>
+              <td>Wellness/kava focus, not youth/gaming; single location</td>
+            </tr>
+            <tr>
+              <td><strong>Rollin Joe's</strong></td>
+              <td>Beverage lounge <em>(opening 2026)</em></td>
+              <td>Coffee, matcha, refreshers, energy; SMU / Asbury St, vibe lounge + DJs</td>
+              <td><span class="threat threat-med">Med</span></td>
+              <td>Coffee-first, broader menu; watch overlap on late-night lounge crowd</td>
+            </tr>
+            <tr>
+              <td><strong>Feng Cha</strong></td>
+              <td>Boba franchise</td>
+              <td>Milk tea, fruit tea, coffee; Richardson HQ, 15+ DFW units</td>
+              <td><span class="threat threat-med">Med</span></td>
+              <td>Tea/boba core; energy is incidental, not customizable bar</td>
+            </tr>
+            <tr>
+              <td><strong>Fat Straws</strong></td>
+              <td>Local boba</td>
+              <td>Boba, smoothies, Vietnamese coffee; Plano, Richardson, Dallas since 2002</td>
+              <td><span class="threat threat-low">Low</span></td>
+              <td>Different daypart & demo; dessert/tea positioning</td>
+            </tr>
+            <tr>
+              <td><strong>Chatime</strong></td>
+              <td>Boba chain</td>
+              <td>Boba + cold brew + canned energy; NW Hwy Dallas, Frisco</td>
+              <td><span class="threat threat-low">Low</span></td>
+              <td>Tea-first; energy is add-on, not build-your-own bar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="section-label">Similar Concepts Elsewhere</h3>
+      <div class="table-scroll">
+        <table class="data-table competitor-table">
+          <thead>
+            <tr><th>Brand</th><th>Market</th><th>Model</th><th>Relevance to VOLT BAR</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hyper Energy Bar</strong></td>
+              <td>IA, NE, MO, KS (17 units)</td>
+              <td>Drive-thru custom energy — pick base + 3 flavors, sugar-free options, 120–240mg</td>
+              <td><strong>Closest analog.</strong> Proves dedicated energy-bar model works; VOLT adds counter + lounge</td>
+            </tr>
+            <tr>
+              <td><strong>Boost</strong></td>
+              <td>Jacksonville, FL (2026+)</td>
+              <td>Drive-thru coffee, refreshers, clean energy; franchising 2027</td>
+              <td>Validates DFW whitespace before national entrants arrive</td>
+            </tr>
+            <tr>
+              <td><strong>Ellianos Coffee</strong></td>
+              <td>Southeast (85+ stores)</td>
+              <td>Build-your-own energy — Lotus / Red Bull base, 30K+ combos</td>
+              <td>Shows franchise scale potential for custom energy menus</td>
+            </tr>
+            <tr>
+              <td><strong>Lola Beans</strong></td>
+              <td>Multi-state franchise</td>
+              <td>Drive-thru coffee, energy, infused teas, Lola Colas — heavy customization</td>
+              <td>Similar frequency model (2 visits/day); energy as core category</td>
+            </tr>
+            <tr>
+              <td><strong>Scooter's Coffee</strong></td>
+              <td>National (incl. DFW)</td>
+              <td>Drive-thru coffee + energy drinks on menu</td>
+              <td>Indirect — speed and convenience, not energy-first identity</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card card-accent">
+        <h3>Where VOLT BAR wins</h3>
+        <p>No DFW player owns <strong>energy-first + in-store lounge + transparent caffeine (mg) + gaming/fitness culture</strong> in one concept. Drive-thru chains (7 Brew, Dutch Bros, Swig) win on convenience; Leaf Café wins on wellness; boba shops win on tea. VOLT BAR sits in the gap: a dedicated energy bar with late hours, custom builds, and a scene — not a coffee shop with energy on the side.</p>
+      </div>
+    </section>
+
+    <!-- Slide 5: Vision -->
+    <section class="slide" data-title="Vision">
+      <h2>Vision — What Would It Look Like?</h2>
+      <ul class="checklist compact">
+        <li><label><input type="checkbox" checked disabled> Interior aesthetic defined — cyber-industrial neon</label></li>
+        <li><label><input type="checkbox" checked disabled> Seating capacity estimated — 24 seats + 8 bar stools</label></li>
+        <li><label><input type="checkbox" checked disabled> Walk-up window + counter-only model</label></li>
+        <li><label><input type="checkbox"> Brand colors, logo, signage sketched</label></li>
+        <li><label><input type="checkbox"> Customer journey mapped entry → exit</label></li>
+      </ul>
+      <table class="data-table">
+        <thead><tr><th>Element</th><th>Plan</th></tr></thead>
+        <tbody>
+          <tr><td>Square footage</td><td>1,200–1,600 sq ft</td></tr>
+          <tr><td>Seating</td><td>Communal tables, bar rail, 2 lounge pods with charging</td></tr>
+          <tr><td>Counter / ordering</td><td>Digital menu boards → build-your-drink kiosk → handoff window</td></tr>
+          <tr><td>Prep area</td><td>Back bar with tap systems, ice program, cold storage, dry goods</td></tr>
+          <tr><td>Ambiance</td><td>LED accent strips, bass-forward playlist, matte black + volt green</td></tr>
+          <tr><td>Signature feature</td><td>Live "caffeine meter" display + imported energy drink wall (chilled + ambient)</td></tr>
+          <tr><td>Retail program</td><td>40–60 SKUs — domestic, craft, and imported bottled/canned energy</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Slide 5: Demographics -->
+    <section class="slide" data-title="Audience">
+      <h2>Target Demographics</h2>
+      <div class="grid-2">
+        <div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox" checked disabled> Primary age: 18–34</label></li>
+            <li><label><input type="checkbox" checked disabled> Mid income, high frequency spenders</label></li>
+            <li><label><input type="checkbox" checked disabled> Lifestyle: fitness, gaming, students, nightlife</label></li>
+            <li><label><input type="checkbox" checked disabled> Peak: 3–7 PM, 9 PM–1 AM weekends</label></li>
+            <li><label><input type="checkbox"> Discovery channels defined</label></li>
+          </ul>
+        </div>
+        <table class="data-table">
+          <thead><tr><th>Audience</th><th>Profile</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Primary</strong></td><td>18–28, gamers & gym-goers, 3–5 visits/week, $8–14 ticket</td></tr>
+            <tr><td><strong>Secondary</strong></td><td>Office commuters seeking afternoon boost, weekend event crowds</td></tr>
+            <tr><td><strong>Why they'll choose you</strong></td><td>Customization, transparency (caffeine mg), vibe, no sugar crash</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Slide 6: Locations -->
+    <section class="slide" data-title="Locations">
+      <h2>Potential Localities — DFW</h2>
+      <p class="lead">Rate each: Fit (1–5) · Rent · Competition · Notes · <a href="ordinances/index.html" class="inline-link">Ordinance research ↗</a> · <a href="ordinances/use-comparison.html" class="inline-link" target="_blank" rel="noopener">Energy vs coffee vs bar ↗</a></p>
+      <div class="location-grid">
+        <div class="location-group">
+          <h3><a href="ordinances/dallas.html" class="city-link">Dallas</a></h3>
+          <ul class="checklist compact loc-list">
+            <li class="loc-item">
+              <label><input type="checkbox" checked> <strong>Deep Ellum</strong> — nightlife, young pros <span class="fit">Fit: 5</span></label>
+              <a href="ordinances/dallas.html#deep-ellum" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Lower Greenville</strong> — bar corridor <span class="fit">Fit: 4</span></label>
+              <a href="ordinances/dallas.html#lower-greenville" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Bishop Arts</strong> — local charm <span class="fit">Fit: 3</span></label>
+              <a href="ordinances/dallas.html#bishop-arts" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Design District</strong> — destination dining <span class="fit">Fit: 3</span></label>
+              <a href="ordinances/dallas.html#design-district" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+          </ul>
+        </div>
+        <div class="location-group">
+          <h3>Fort Worth &amp; Suburbs</h3>
+          <ul class="checklist compact loc-list">
+            <li class="loc-item">
+              <label><input type="checkbox" checked> <strong>West 7th</strong> — young entertainment crowd <span class="fit">Fit: 5</span></label>
+              <a href="ordinances/fort-worth.html#west-7th" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Frisco / The Star</strong> — events traffic <span class="fit">Fit: 4</span></label>
+              <a href="ordinances/frisco.html#frisco-star" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Arlington / UTA</strong> — students <span class="fit">Fit: 4</span></label>
+              <a href="ordinances/arlington.html#arlington-uta" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Richardson</strong> — office lunch <span class="fit">Fit: 3</span></label>
+              <a href="ordinances/richardson.html#richardson" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+            <li class="loc-item">
+              <label><input type="checkbox"> <strong>Lewisville</strong> — Old Town / Vista Ridge, lake corridor <span class="fit">Fit: 4</span></label>
+              <a href="ordinances/lewisville.html#lewisville" class="loc-ord-link">Ordinances ↗</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Rank</th><th>Area</th><th>Why</th><th>Ordinances</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Deep Ellum, Dallas</td><td>Late-night foot traffic, youth density, weak custom energy competition</td><td><a href="ordinances/dallas.html#deep-ellum" class="inline-link">View ↗</a></td></tr>
+          <tr><td>2</td><td>West 7th, Fort Worth</td><td>Entertainment corridor, parking, similar demo</td><td><a href="ordinances/fort-worth.html#west-7th" class="inline-link">View ↗</a></td></tr>
+          <tr><td>3</td><td>Frisco near The Star</td><td>Event spikes, affluent suburbs, corporate adjacency</td><td><a href="ordinances/frisco.html#frisco-star" class="inline-link">View ↗</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Slide 7: Use Comparison -->
+    <section class="slide slide-compare" data-title="Compare">
+      <h2>Energy vs Coffee vs Bar</h2>
+      <p class="lead">Zoning, profitability, startup cost, and setup difficulty in DFW.</p>
+
+      <div class="use-legend">
+        <span><i class="use-dot use-dot-energy"></i> Energy (VOLT BAR)</span>
+        <span><i class="use-dot use-dot-coffee"></i> Coffee shop</span>
+        <span><i class="use-dot use-dot-bar"></i> Alcohol bar</span>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data-table use-compare-table">
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th class="use-col-energy">Energy</th>
+              <th class="use-col-coffee">Coffee</th>
+              <th class="use-col-bar">Bar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Zoning use</td><td>Restaurant / beverage</td><td>Restaurant / café</td><td>Bar — often SUP/CUP</td></tr>
+            <tr><td>TABC license</td><td>None</td><td>None</td><td>Required</td></tr>
+            <tr><td>Late night (12a–6a)</td><td>SUP in some PDs</td><td>Usually closes early</td><td>Often permitted / SUP</td></tr>
+            <tr><td>Peak hours</td><td>3–7 PM, 9 PM–1 AM</td><td>6–10 AM, lunch</td><td>5 PM–2 AM</td></tr>
+            <tr><td>Avg ticket</td><td>$8–14</td><td>$5–8</td><td>$15–30+</td></tr>
+            <tr><td>Gross margin</td><td>65–75%</td><td>60–70%</td><td>70–85% (alcohol)</td></tr>
+            <tr><td>Est. startup (mid)</td><td>~$242K</td><td>~$180–280K</td><td>~$350–550K</td></tr>
+            <tr><td>Break-even</td><td>~12–18 mo</td><td>18–24 mo (saturated)</td><td>12–24 mo (if licensed)</td></tr>
+            <tr><td>Setup difficulty</td><td>Medium</td><td>Low–medium</td><td>High</td></tr>
+            <tr><td>Food required?</td><td>No (optional snacks)</td><td>No (optional pastry)</td><td>Yes (TABC / zoning)</td></tr>
+            <tr><td>Deep Ellum fit</td><td>Strong — restaurant by right</td><td>Weak — no morning crowd</td><td>Strong — but bar SUP</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card compare-food">
+        <h3>Is food required?</h3>
+        <p><strong class="use-col-energy">Energy shop — No.</strong> VOLT BAR needs a city food-establishment permit because of custom beverage prep (ice, bases, milk alternatives), but Texas and DFW rules do <em>not</em> require a kitchen or entrees. Bottled/import cans are prepackaged retail. Optional prepackaged snacks (chips, protein bars) add ticket size without a grease trap or hot kitchen.</p>
+        <p><strong class="use-col-coffee">Coffee shop — No.</strong> Beverage-only coffee is allowed under a standard food-service permit. Pastries and sandwiches are optional for revenue; a full kitchen is a choice, not a license requirement (unless you add alcohol).</p>
+        <p><strong class="use-col-bar">Bar — Yes.</strong> Texas TABC generally requires real food service with a mixed beverage permit: commercial cooking equipment, multiple entrees, and food available whenever alcohol is served. Prepackaged snacks alone do not count. Dallas/Frisco zoning also treats 75%+ alcohol revenue as a bar use, not a restaurant.</p>
+        <p class="muted"><a href="ordinances/use-comparison.html#food-required" class="inline-link" target="_blank" rel="noopener">Full food requirements breakdown ↗</a></p>
+      </div>
+
+      <h3 class="section-label">Profitability · Cost · Setup</h3>
+      <div class="pros-cons-deck">
+        <article class="pc-card pc-energy">
+          <h4>Energy shop</h4>
+          <p class="pc-topic">Profitability</p>
+          <ul class="pros"><li>Higher ticket + 65–75% margin</li><li>Late-night daypart adds revenue hours</li></ul>
+          <ul class="cons"><li>Unproven category — no benchmark comps</li><li>Frequency still being validated</li></ul>
+          <p class="pc-topic">Cost</p>
+          <ul class="pros"><li>No TABC fees or dram shop insurance</li><li>Equipment below full espresso/bar build</li></ul>
+          <ul class="cons"><li>Lounge build-out + ice program add cost</li><li>~$242K mid-case per VOLT model</li></ul>
+          <p class="pc-topic">Setup</p>
+          <ul class="pros"><li>Same zoning path as coffee (restaurant use)</li><li>No age verification or liquor overlay</li></ul>
+          <ul class="cons"><li>Must explain novel use to planners/landlords</li><li>Late-night may need SUP in some PDs</li></ul>
+        </article>
+        <article class="pc-card pc-coffee">
+          <h4>Coffee shop</h4>
+          <p class="pc-topic">Profitability</p>
+          <ul class="pros"><li>Proven daily habit — repeat AM traffic</li><li>Office corridors = steady lunch volume</li></ul>
+          <ul class="cons"><li>Lower ticket ($5–8) caps revenue</li><li>DFW oversaturated — margin pressure</li></ul>
+          <p class="pc-topic">Cost</p>
+          <ul class="pros"><li>Can start beverage-only, lower food cost</li><li>Used espresso gear widely available</li></ul>
+          <ul class="cons"><li>Espresso machine $8K–25K+</li><li>Franchise fees if not independent</li></ul>
+          <p class="pc-topic">Setup</p>
+          <ul class="pros"><li>Landlords &amp; health dept understand the use</li><li>Fastest CO / permit path of the three</li></ul>
+          <ul class="cons"><li>Hard to differentiate in crowded market</li><li>Weak late-night unless hybrid model</li></ul>
+        </article>
+        <article class="pc-card pc-bar">
+          <h4>Alcohol bar</h4>
+          <p class="pc-topic">Profitability</p>
+          <ul class="pros"><li>Highest $/drink and tip income</li><li>Strong nightlife corridors (Deep Ellum)</li></ul>
+          <ul class="cons"><li>75% alcohol rule — limits food revenue mix</li><li>Volatile; seasonality &amp; liability risk</li></ul>
+          <p class="pc-topic">Cost</p>
+          <ul class="pros"><li>Alcohol inventory turns fast on busy nights</li><li>Can reuse existing bar build-out shells</li></ul>
+          <ul class="cons"><li>TABC, higher insurance, security staffing</li><li>Est. $350–550K+ startup typical</li></ul>
+          <p class="pc-topic">Setup</p>
+          <ul class="pros"><li>Nightlife districts expect bar tenants</li><li>Existing SUP shells available in Deep Ellum</li></ul>
+          <ul class="cons"><li>SUP/CUP + liquor overlay + TABC timeline</li><li>Noise/security conditions on permits</li></ul>
+        </article>
+      </div>
+
+      <div class="card card-accent compare-cta">
+        <p><strong>Recommended:</strong> Operate as restaurant without drive-in — same bucket as coffee, not a bar. Avoid alcohol unless ready for rezoning + TABC.</p>
+        <a href="ordinances/use-comparison.html" class="btn btn-open" target="_blank" rel="noopener">Full comparison with citations ↗</a>
+      </div>
+    </section>
+
+    <!-- Slide 8: Risks -->
+    <section class="slide" data-title="Risks">
+      <h2>Drawbacks & Risks</h2>
+      <div class="grid-2">
+        <div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox" checked disabled> High competition acknowledged</label></li>
+            <li><label><input type="checkbox" checked disabled> Texas heat → ice/cold chain critical</label></li>
+            <li><label><input type="checkbox"> Labor costs assessed</label></li>
+            <li><label><input type="checkbox"> Supply chain for specialty ingredients</label></li>
+            <li><label><input type="checkbox"> Health dept permitting understood</label></li>
+            <li><label><input type="checkbox"> Economic downturn sensitivity</label></li>
+          </ul>
+          <ol class="numbered-list">
+            <li>Caffeine liability & age-policy perception</li>
+            <li>Energy drink category fatigue vs. novelty wear-off</li>
+            <li>High rent in top-fit corridors (Deep Ellum, West 7th)</li>
+          </ol>
+        </div>
+        <table class="data-table">
+          <thead><tr><th>Risk</th><th>Mitigation</th></tr></thead>
+          <tbody>
+            <tr><td>Regulatory scrutiny on caffeine</td><td>Cap custom blends at 400mg, clear labeling, staff training</td></tr>
+            <tr><td>Seasonal slowdown</td><td>Winter LTO hot energy lattes, gym partnerships in Jan</td></tr>
+            <tr><td>Staff turnover</td><td>Recipe cards, cross-training, competitive tips + shift drinks</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Slide 8: Profit -->
+    <section class="slide" data-title="Profit">
+      <h2>Profit Potential</h2>
+      <div class="stat-row">
+        <div class="stat"><span class="stat-value">$11</span><span class="stat-label">Avg ticket</span></div>
+        <div class="stat"><span class="stat-value">180</span><span class="stat-label">Daily transactions (base)</span></div>
+        <div class="stat"><span class="stat-value">68%</span><span class="stat-label">Gross margin</span></div>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Scenario</th><th>Daily customers</th><th>Avg ticket</th><th>Monthly revenue</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Conservative</td><td>120</td><td>$9</td><td>$32,400</td></tr>
+          <tr class="highlight-row"><td>Base</td><td>180</td><td>$11</td><td>$59,400</td></tr>
+          <tr><td>Optimistic</td><td>250</td><td>$13</td><td>$97,500</td></tr>
+        </tbody>
+      </table>
+      <div class="grid-3 cards-row">
+        <div class="card"><h4>Fixed costs</h4><p>$14,200/mo</p><p class="muted">Rent, utilities, insurance, loan</p></div>
+        <div class="card"><h4>Variable costs</h4><p>$22,000/mo</p><p class="muted">COGS + labor ~37%</p></div>
+        <div class="card card-accent"><h4>Break-even</h4><p>~14 months</p><p class="muted">Target net margin: 12–18%</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 9: Growth -->
+    <section class="slide" data-title="Growth">
+      <h2>Future Growth Potential</h2>
+      <div class="grid-2">
+        <ul class="checklist">
+          <li><label><input type="checkbox" checked> Second location feasibility</label></li>
+          <li><label><input type="checkbox" checked> Corporate & esports team catering</label></li>
+          <li><label><input type="checkbox" checked> Festival & pop-up revenue</label></li>
+          <li><label><input type="checkbox"> Bottling own signature blends</label></li>
+          <li><label><input type="checkbox"> Franchise model (long term)</label></li>
+          <li><label><input type="checkbox" checked> Extended hours & seasonal LTOs</label></li>
+          <li><label><input type="checkbox" checked> Delivery partnerships</label></li>
+        </ul>
+        <div class="card">
+          <h3>Growth paths (ranked)</h3>
+          <ol class="numbered-list">
+            <li>Esports lounge partnerships + sponsored "team blends"</li>
+            <li>Pre-bottled VOLT signature line in local gyms & convenience</li>
+            <li>Second store in Fort Worth or Frisco within 24 months</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10: Community -->
+    <section class="slide" data-title="Community">
+      <h2>Community Growth Potential</h2>
+      <ul class="checklist">
+        <li><label><input type="checkbox" checked> Local partnerships (gyms, gaming cafés, UTA/esports)</label></li>
+        <li><label><input type="checkbox" checked> Loyalty program — "Voltage Points"</label></li>
+        <li><label><input type="checkbox" checked> Community events (tournaments, watch parties)</label></li>
+        <li><label><input type="checkbox"> Social & UGC strategy</label></li>
+        <li><label><input type="checkbox" checked> Hire locally, visible neighborhood presence</label></li>
+        <li><label><input type="checkbox"> Sustainability / local sourcing angle</label></li>
+      </ul>
+      <div class="card card-accent">
+        <h3>Becoming part of the neighborhood</h3>
+        <p>Host monthly fighting-game nights and gym "fuel-up" mornings. Partner with local streamers for co-branded limited drops. Sponsor high school esports clubs with a student discount program — become the place people meet before and after the scene, not just a drink stop.</p>
+      </div>
+    </section>
+
+    <!-- Slide 11: Capital -->
+    <section class="slide" data-title="Capital">
+      <h2>Starting Capital Requirements</h2>
+      <table class="data-table capital-table">
+        <thead>
+          <tr><th>Item</th><th>Low</th><th>Mid</th><th>High</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lease deposit + first month</td><td>$8,000</td><td>$12,000</td><td>$18,000</td></tr>
+          <tr><td>Build-out / renovation</td><td>$40,000</td><td>$75,000</td><td>$120,000</td></tr>
+          <tr><td>Equipment (tap, ice, refrigeration, POS)</td><td>$25,000</td><td>$45,000</td><td>$70,000</td></tr>
+          <tr><td>Furniture & fixtures</td><td>$8,000</td><td>$15,000</td><td>$25,000</td></tr>
+          <tr><td>Initial inventory & supplies</td><td>$5,000</td><td>$8,000</td><td>$12,000</td></tr>
+          <tr><td>Permits, legal, accounting</td><td>$3,000</td><td>$6,000</td><td>$10,000</td></tr>
+          <tr><td>Insurance</td><td>$2,000</td><td>$4,000</td><td>$6,000</td></tr>
+          <tr><td>Signage & branding</td><td>$5,000</td><td>$12,000</td><td>$20,000</td></tr>
+          <tr><td>Marketing launch</td><td>$5,000</td><td>$15,000</td><td>$30,000</td></tr>
+          <tr><td>Working capital (3–6 mo)</td><td>$30,000</td><td>$50,000</td><td>$80,000</td></tr>
+          <tr class="highlight-row"><td><strong>Total startup</strong></td><td><strong>$131,000</strong></td><td><strong>$242,000</strong></td><td><strong>$391,000</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="funding-row">
+        <div class="card"><h4>Personal savings</h4><p>$60,000</p></div>
+        <div class="card"><h4>SBA / bank</h4><p>$120,000</p></div>
+        <div class="card"><h4>Gap to close</h4><p>$62,000</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 12: Launch Phases -->
+    <section class="slide" data-title="Launch">
+      <h2>Steps for Getting Started</h2>
+      <div class="phases">
+        <article class="phase">
+          <span class="phase-num">01</span>
+          <h3>Validate the concept</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Visit 10+ shops in DFW</label></li>
+            <li><label><input type="checkbox" checked> Signature angle: custom energy bar</label></li>
+            <li><label><input type="checkbox"> Pop-up taste tests with target demo</label></li>
+            <li><label><input type="checkbox" checked> MVP menu: 8 core + 6 add-ins + bottled/import wall</label></li>
+            <li><label><input type="checkbox"> Source imported energy drink distributors (Asian, EU, LATAM)</label></li>
+            <li><label><input type="checkbox"> Cost each drink (COGS)</label></li>
+            <li><label><input type="checkbox"> Mock rush speed test</label></li>
+          </ul>
+        </article>
+        <article class="phase">
+          <span class="phase-num">02</span>
+          <h3>Build the drink program</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Source suppliers (bases, caffeine, cups)</label></li>
+            <li><label><input type="checkbox"> Spec bar equipment</label></li>
+            <li><label><input type="checkbox" checked> Bar layout for rush flow</label></li>
+            <li><label><input type="checkbox"> Cup sizes & packaging</label></li>
+            <li><label><input type="checkbox"> Cold storage par levels</label></li>
+            <li><label><input type="checkbox" checked> Upsells: extra caffeine, collagen, boba</label></li>
+          </ul>
+        </article>
+        <article class="phase">
+          <span class="phase-num">03</span>
+          <h3>Permits & build-out</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Food establishment permit</label></li>
+            <li><label><input type="checkbox"> Food handler certification</label></li>
+            <li><label><input type="checkbox"> Plumbing & electrical for ice/taps</label></li>
+            <li><label><input type="checkbox"> Health-inspector-ready floor plan</label></li>
+            <li><label><input type="checkbox"> Pass health inspection</label></li>
+          </ul>
+        </article>
+        <article class="phase">
+          <span class="phase-num">04</span>
+          <h3>Dial in & launch</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Hire & train lead barista</label></li>
+            <li><label><input type="checkbox"> Lock recipes & portion standards</label></li>
+            <li><label><input type="checkbox"> Opening/closing prep lists</label></li>
+            <li><label><input type="checkbox"> Soft opening (quality & speed)</label></li>
+            <li><label><input type="checkbox"> Lock supplier delivery schedule</label></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Slide 13: Future Research -->
+    <section class="slide" data-title="Research">
+      <h2>Future Research — Setup Topics</h2>
+      <p class="lead">Open questions to resolve before signing a lease, ordering equipment, or opening the doors.</p>
+      <ul class="checklist compact">
+        <li><label><input type="checkbox"> Research backlog prioritized (must-know vs. nice-to-have)</label></li>
+        <li><label><input type="checkbox"> Owner assigned for each topic area</label></li>
+        <li><label><input type="checkbox"> Target completion dates set before Phase 3 build-out</label></li>
+      </ul>
+
+      <div class="research-grid">
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Legal & Regulatory</h3>
+            <span class="priority priority-high">Priority</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Dallas vs. Tarrant vs. Collin/Denton county health dept requirements for beverage-only prep</label></li>
+            <li><label><input type="checkbox"> Caffeine disclosure, max-mg policy, and liability (signage, waivers, age guidance)</label></li>
+            <li><label><input type="checkbox"> Business entity, EIN, TX sales tax permit, assumed name (DBA)</label></li>
+            <li><label><input type="checkbox"> Food manager certification — who needs it, which approved course</label></li>
+            <li><label><input type="checkbox"> Zoning & signage rules for target corridors (Deep Ellum, Lewisville, West 7th)</label></li>
+            <li><label><input type="checkbox"> GL, property, and workers comp insurance — quotes for beverage retail</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Real Estate & Build-Out</h3>
+            <span class="priority priority-high">Priority</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Rent comps & availability for 1,200–1,600 sq ft in top 3 areas</label></li>
+            <li><label><input type="checkbox"> Lease terms — NNN vs. gross, TI allowance, exclusive use, termination clauses</label></li>
+            <li><label><input type="checkbox"> Grease trap / floor drain requirements (even for beverage-only in some cities)</label></li>
+            <li><label><input type="checkbox"> Electrical load for ice machine, walk-in, tap system, HVAC</label></li>
+            <li><label><input type="checkbox"> Health-dept floor plan — handwash sink placement, 3-compartment, sanitizer station</label></li>
+            <li><label><input type="checkbox"> Late-night hours — noise ordinances, parking, security for lounge model</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Equipment & Suppliers</h3>
+            <span class="priority priority-high">Priority</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Energy base vendor — Lotus, proprietary blend, or bulk caffeine + flavor system (pricing, MOQ)</label></li>
+            <li><label><input type="checkbox"> Ice program — machine type/size, storage, daily output for 180+ drinks/day</label></li>
+            <li><label><input type="checkbox"> Bar equipment — blenders, refrigeration, tap/dispense, cold storage layout quotes</label></li>
+            <li><label><input type="checkbox"> Cups, lids, straws — custom branding MOQ, lead time, compostable vs. plastic cost</label></li>
+            <li><label><input type="checkbox"> Functional add-in suppliers (collagen, vitamins, boba pearls) — shelf life & storage</label></li>
+            <li><label><input type="checkbox"> Bottled/import distributors — Asian, EU, LATAM energy cans; MOQ, cold chain, labeling</label></li>
+            <li><label><input type="checkbox"> Equipment maintenance contracts & warranty comparison</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Menu, COGS & Operations</h3>
+            <span class="priority priority-med">Next</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Full recipe costing — every core drink + add-in to the penny (incl. ice, cup, lid)</label></li>
+            <li><label><input type="checkbox"> Rush-speed benchmark — target seconds per drink at 180/day volume</label></li>
+            <li><label><input type="checkbox"> Par levels & delivery frequency for perishables (dairy alt, fruit purees, pearls)</label></li>
+            <li><label><input type="checkbox"> HACCP / temp logs — cold hold standards for milk and prepped ingredients</label></li>
+            <li><label><input type="checkbox"> Waste tracking method and acceptable shrink % for launch month</label></li>
+            <li><label><input type="checkbox"> Opening & closing SOP drafts — who writes, who trains</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Staffing & Labor</h3>
+            <span class="priority priority-med">Next</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Wage benchmarks for baristas in DFW — base pay, tips, shift-drink policy</label></li>
+            <li><label><input type="checkbox"> Headcount model — opens, peak (3–7 PM), late night (9 PM–1 AM), weekends</label></li>
+            <li><label><input type="checkbox"> Hiring pipeline — where to recruit (gyms, esports venues, culinary schools)</label></li>
+            <li><label><input type="checkbox"> Food handler cert process & timeline for each hire (Texas)</label></li>
+            <li><label><input type="checkbox"> Training program length — recipe mastery, speed, caffeine-policy compliance</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Financial & Funding</h3>
+            <span class="priority priority-med">Next</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> SBA 7(a) vs. microloan — eligibility, timeline, personal guarantee terms</label></li>
+            <li><label><input type="checkbox"> DFW small-business grants, SCORE/SBDC advisor consult</label></li>
+            <li><label><input type="checkbox"> 3-year pro forma — rent sensitivity at $28 vs. $38 vs. $48/sq ft</label></li>
+            <li><label><input type="checkbox"> Working capital runway — how many months at conservative revenue</label></li>
+            <li><label><input type="checkbox"> Investor/partner structure if closing the $62K gap</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Technology & POS</h3>
+            <span class="priority priority-med">Next</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> POS comparison — Toast, Square, Clover for custom build modifiers</label></li>
+            <li><label><input type="checkbox"> Self-order kiosk vs. counter — cost, speed, vibe trade-offs</label></li>
+            <li><label><input type="checkbox"> Caffeine mg calculator — menu integration or live display build</label></li>
+            <li><label><input type="checkbox"> Loyalty program — app vs. punch card vs. Square Loyalty</label></li>
+            <li><label><input type="checkbox"> DoorDash / Uber Eats — commission math, packaging for energy drinks</label></li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <div class="research-head">
+            <h3>Brand, Marketing & Community</h3>
+            <span class="priority priority-low">Later</span>
+          </div>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> USPTO + TX trademark search for VOLT BAR and alternates</label></li>
+            <li><label><input type="checkbox"> Domain, Instagram, TikTok handle availability</label></li>
+            <li><label><input type="checkbox"> Logo & signage vendor quotes — channel letters, neon, window vinyl</label></li>
+            <li><label><input type="checkbox"> Grand opening budget — influencers, esports venue cross-promo, free-drink cap</label></li>
+            <li><label><input type="checkbox"> Gym / gaming lounge / UTA partnership outreach list & terms</label></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card">
+        <h3>Research sequencing</h3>
+        <p><strong>Before lease:</strong> legal/zoning, rent comps, health-dept pre-consult, insurance quotes. · <strong>Before equipment orders:</strong> supplier MOQs, bar layout, electrical/plumbing plan. · <strong>Before hire:</strong> recipes costed, SOPs drafted, training timeline. · <strong>Before grand opening:</strong> trademark, loyalty, launch marketing locked.</p>
+      </div>
+    </section>
+
+    <!-- Slide 14: Operations -->
+    <section class="slide" data-title="Operations">
+      <h2>Steps for Running the Place</h2>
+      <div class="ops-grid">
+        <div class="card">
+          <h3>Daily</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Opening checklist</label></li>
+            <li><label><input type="checkbox"> Documented prep standards</label></li>
+            <li><label><input type="checkbox"> Peak-hour staffing</label></li>
+            <li><label><input type="checkbox"> Closing checklist</label></li>
+            <li><label><input type="checkbox"> Sales & waste log</label></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Weekly</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> Inventory & vendor reconciliation</label></li>
+            <li><label><input type="checkbox"> Staff schedule published</label></li>
+            <li><label><input type="checkbox"> Social content posted</label></li>
+            <li><label><input type="checkbox"> Review customer feedback</label></li>
+            <li><label><input type="checkbox"> Equipment maintenance</label></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Monthly</h3>
+          <ul class="checklist compact">
+            <li><label><input type="checkbox"> P&L vs. budget</label></li>
+            <li><label><input type="checkbox"> Labor & COGS % tracked</label></li>
+            <li><label><input type="checkbox"> Menu performance review</label></li>
+            <li><label><input type="checkbox"> Local marketing / events</label></li>
+            <li><label><input type="checkbox"> Staff training refresh</label></li>
+          </ul>
+        </div>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Metric</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td>Labor cost % of sales</td><td>≤ 30–35%</td></tr>
+          <tr><td>COGS %</td><td>≤ 25–30%</td></tr>
+          <tr><td>Average ticket</td><td>$11</td></tr>
+          <tr><td>Daily transactions</td><td>180</td></tr>
+          <tr><td>Online review rating</td><td>≥ 4.5</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Slide 14: Scorecard -->
+    <section class="slide slide-final" data-title="Decision">
+      <h2>Final Decision Scorecard</h2>
+      <p class="lead">Rate each area 1–5 before committing.</p>
+      <table class="data-table scorecard">
+        <thead><tr><th>Criterion</th><th>Score</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Concept clarity</td><td><input type="number" min="1" max="5" value="4" class="score-input"></td><td>Strong differentiation</td></tr>
+          <tr><td>Market demand</td><td><input type="number" min="1" max="5" value="4" class="score-input"></td><td>DFW youth + fitness density</td></tr>
+          <tr><td>Location options</td><td><input type="number" min="1" max="5" value="3" class="score-input"></td><td>Top spots are pricey</td></tr>
+          <tr><td>Profit potential</td><td><input type="number" min="1" max="5" value="4" class="score-input"></td><td>High margin drinks</td></tr>
+          <tr><td>Growth potential</td><td><input type="number" min="1" max="5" value="5" class="score-input"></td><td>Esports + bottling upside</td></tr>
+          <tr><td>Community fit</td><td><input type="number" min="1" max="5" value="4" class="score-input"></td><td>Event-driven loyalty</td></tr>
+          <tr><td>Capital readiness</td><td><input type="number" min="1" max="5" value="2" class="score-input"></td><td>$62K gap remains</td></tr>
+          <tr><td>Risk tolerance</td><td><input type="number" min="1" max="5" value="3" class="score-input"></td><td>Caffeine category risk</td></tr>
+          <tr class="highlight-row"><td><strong>Total / 40</strong></td><td id="totalScore"><strong>29</strong></td><td></td></tr>
+        </tbody>
+      </table>
+      <div class="decision-row">
+        <div class="card">
+          <label for="goNoGo">Go / no-go decision</label>
+          <input type="text" id="goNoGo" class="text-input" value="Conditional GO — close funding gap first">
+        </div>
+        <div class="card">
+          <label for="nextAction">Next action by</label>
+          <input type="text" id="nextAction" class="text-input" value="Complete pop-up validation — Oct 2026">
+        </div>
+      </div>
+      <p class="progress-summary">Checklist progress: <strong id="checkProgress">0%</strong> complete</p>
+    </section>
+  </main>
+
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
