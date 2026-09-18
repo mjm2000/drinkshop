@@ -631,22 +631,45 @@ body.present-mode .slide {
   border-color: var(--accent-dim);
 }
 
-.slide-marketing {
+.slide-marketing,
+.slide-suppliers {
   justify-content: flex-start;
   padding-bottom: 4rem;
 }
 
-body.present-mode .slide-marketing {
+body.present-mode .slide-marketing,
+body.present-mode .slide-suppliers {
   overflow-y: auto;
   justify-content: flex-start;
 }
 
-.marketing-table {
+.marketing-table,
+.suppliers-table {
   font-size: 0.76rem;
 }
 
-.marketing-table td:first-child {
+.marketing-table td:first-child,
+.suppliers-table td:first-child {
   white-space: nowrap;
+}
+
+.supplier-summary-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .supplier-summary-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.supplier-rhythm {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.84rem;
+}
+
+.supplier-rhythm li + li {
+  margin-top: 0.25rem;
 }
 
 .marketing-find-grid {
