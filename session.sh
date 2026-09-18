@@ -32,7 +32,7 @@ print_full_context() {
 - Bottled/import retail wall (40–60 SKUs, Made in Texas + Around the World)
 - Caffeine mg transparency on every cup
 - NOT positioned as late-night — peak hours: 11 AM–2 PM, 3–7 PM
-- No kitchen required (beverage-only food permit); optional prepackaged snacks
+- No kitchen required (beverage-only food permit); optional prepackaged snacks + protein bars; creatine scoop add-in at bar
 
 ## Target clientele (primary)
 1. Students — campus-adjacent (UTA, UTD, SMU, UNT), study sessions, student ID discount
