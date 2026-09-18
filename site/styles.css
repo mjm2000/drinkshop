@@ -631,6 +631,38 @@ body.present-mode .slide {
   border-color: var(--accent-dim);
 }
 
+.slide-marketing {
+  justify-content: flex-start;
+  padding-bottom: 4rem;
+}
+
+body.present-mode .slide-marketing {
+  overflow-y: auto;
+  justify-content: flex-start;
+}
+
+.marketing-table {
+  font-size: 0.76rem;
+}
+
+.marketing-table td:first-child {
+  white-space: nowrap;
+}
+
+.marketing-find-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 720px) {
+  .marketing-find-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.compact-list {
+  font-size: 0.86rem;
+  margin: 0;
+}
+
 .slide-compare {
   padding-bottom: 4rem;
 }
